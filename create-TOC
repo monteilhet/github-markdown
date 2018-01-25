@@ -1,0 +1,6 @@
+
+if [ ! -e gh-md-toc ]
+then
+    wget https://raw.githubusercontent.com/ekalinin/github-markdown-toc/master/gh-md-toc
+fi
+bash gh-md-toc README.md
