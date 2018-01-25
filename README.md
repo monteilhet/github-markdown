@@ -141,3 +141,9 @@ And, of course emoji! :sparkles: :camel: :boom:
 <br>emoji list : http://www.webpagefx.com/tools/emoji-cheat-sheet/
 
 
+TOC
+---
+
+cf https://github.com/ekalinin/github-markdown-toc
+
+gh-md-toc — is for you if you want to generate TOC for README.md or GitHub's wiki page
