@@ -15,6 +15,7 @@ Table of Contents
       * [Code](#code)
       * [Extras](#extras)
       * [TOC](#toc)
+    * [Workaround](#workaround)
 
 # github-markdown
 
@@ -165,3 +166,10 @@ TOC
 cf https://github.com/ekalinin/github-markdown-toc
 
 gh-md-toc — is for you if you want to generate TOC for README.md or GitHub's wiki page
+
+
+Workaround
+==========
+
+ * Title not correctly displayed in github markdown (try to delete and reinsert space between # and title) <br> --> Test using VSCode Ctrl+Shift+V preview
+ * TOC ref in github has to be in lowercase `[Extra Section TEST](#extra-section-test) `
