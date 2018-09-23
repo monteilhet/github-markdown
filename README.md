@@ -167,6 +167,7 @@ cf https://github.com/ekalinin/github-markdown-toc
 
 gh-md-toc — is for you if you want to generate TOC for README.md or GitHub's wiki page
 
+NB TOC for jupyter notebook slightly differs using camel case syntax for anchor label 
 
 Workaround
 ==========
