@@ -173,4 +173,5 @@ Workaround
 ==========
 
  * Title not correctly displayed in github markdown (try to delete and reinsert space between # and title) <br> --> Test using VSCode Ctrl+Shift+V preview
- * TOC ref in github has to be in lowercase `[Extra Section TEST](#extra-section-test) `
+ * TOC ref in github has to be in lowercase `[Extra Section TEST](#extra-section-test)`
+   => use  `sed  '/(#/s/\(#.*\)/\L\1/' file.md > fixed.md`
