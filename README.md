@@ -15,11 +15,13 @@ Table of Contents
       * [Code](#code)
       * [Extras](#extras)
       * [TOC](#toc)
-    * [Workaround](#workaround)
+   * [Workaround](#workaround)
+   * [PDF](#pdf)
+
 
 # github-markdown
 
-* [mastering markdown](https://guides.github.com/features/mastering-markdown/) 
+* [mastering markdown](https://guides.github.com/features/mastering-markdown/)
 * [markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 * [github help](https://help.github.com/categories/writing-on-github/)
 
@@ -66,8 +68,8 @@ Alternatively,
 - And if you have sub points, put two spaces before the dash or star:
     - Like this
     - And this
-  
-  
+
+
 Image
 ---------
 
@@ -167,7 +169,7 @@ cf https://github.com/ekalinin/github-markdown-toc
 
 gh-md-toc — is for you if you want to generate TOC for README.md or GitHub's wiki page
 
-NB TOC for jupyter notebook slightly differs using camel case syntax for anchor label 
+NB TOC for jupyter notebook slightly differs using camel case syntax for anchor label
 
 Workaround
 ==========
@@ -175,3 +177,10 @@ Workaround
  * Title not correctly displayed in github markdown (try to delete and reinsert space between # and title) <br> --> Test using VSCode Ctrl+Shift+V preview
  * TOC ref in github has to be in lowercase `[Extra Section TEST](#extra-section-test)`
    => use  `sed  '/(#/s/\(#.*\)/\L\1/' file.md > fixed.md`
+
+PDF
+===
+
+```bash
+pandoc -o gitref.pdf README.md
+```
