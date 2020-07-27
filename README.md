@@ -175,12 +175,10 @@ Workaround
 ==========
 
  * Title not correctly displayed in github markdown (try to delete and reinsert space between # and title) <br> --> Test using VSCode Ctrl+Shift+V preview
+ <br>(use cat -v to display not printable : search for M-BM- <=> 0xc2 0xa0 )
+   ```
+   cat -t gh_README.md | grep M-BM-
+   sed -i 's/\xc2\xa0/ /g gh_README.md
+   ```
  * TOC ref in github has to be in lowercase `[Extra Section TEST](#extra-section-test)`
    => use  `sed  '/(#/s/\(#.*\)/\L\1/' file.md > fixed.md`
-
-PDF
-===
-
-```bash
-pandoc -o gitref.pdf README.md
-```
